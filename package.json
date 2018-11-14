@@ -1,0 +1,12 @@
+{
+  "name": "chalk-stderr",
+  "version": "1.0.0",
+  "description": "Chalk for stderr",
+  "main": "index.js",
+  "author": "Pavel Lang <langpavel@phpskelet.org>",
+  "license": "ISC",
+  "peerDependencies": {
+    "chalk": ">=2.4.1",
+    "supports-color": ">=5.5.0"
+  }
+}

@@ -1,2 +1,28 @@
 # chalk-stderr
+
 Chalk for stderr
+
+## Usage
+
+See [chalk](https://github.com/chalk/chalk/blob/master/readme.md)
+
+```js
+const cherr = require('chalk-stderr');
+
+// Everything else is same
+```
+
+## How This Works
+
+This is all what this package contains.
+
+Everything else is delegated to peer dependencies as you can see:
+
+```js
+const supportsColor = require('supports-color');
+const Chalk = require('chalk').constructor;
+module.exports = new Chalk({ level: supportsColor.stderr.level });
+```
+
+That's all!
+---
