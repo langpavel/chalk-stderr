@@ -27,7 +27,7 @@ Everything else is delegated to peer dependencies as you can see:
 ```js
 const supportsColor = require('supports-color');
 const Chalk = require('chalk').constructor;
-module.exports = new Chalk({ level: supportsColor.stderr.level });
+module.exports = new Chalk({ level: supportsColor.stderr ? supportsColor.stderr.level : 0 });
 ```
 
 That's all!
